@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  
+
+  root 'welcome#index'
+
   get 'sitemap/index'
 
   get 'about/index'

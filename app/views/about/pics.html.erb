@@ -1,0 +1,47 @@
+<style>
+
+body {background-color: rgb(236,235,234);}
+
+img {width: 800px;}
+img {margin-left: 50px;}
+
+h1 {font-family: "Verdana";}
+h1 {margin-left: 50px;}
+
+p {font-family: "Verdana";}
+p {font-size: 14px;}
+
+p {
+    margin-right: 150px;
+    margin-left: 50px;
+}
+
+</style>
+
+
+
+
+<h1> The Places I've Called Home </h1>
+
+<p>  </p>
+<p>
+
+<%# Using an array of images  %>
+
+<% pics = [
+			['http://purl.theinlinegroup.com/tucson_medical_center/images/desert-sunset.jpg', 'I was born in Tucson, Arizona and went to school in Tempe.'],
+			['https://c2.staticflickr.com/8/7172/6656700529_d9c259e84b_z.jpg', 'When I was 22, I moved to the Amazing City of Chicago.'],
+			['http://gokms.com/wp-content/uploads/2014/06/Atlanta-At-Night-Hd.jpg', 'Now I call Atlanta, GA home.  This city is growing on me.']
+			] %>
+
+ 
+
+<% pics.each do |url, about_img| %>
+ 	<p><%= about_img %></p>
+    <a href= "<%= url %>"><img src="<%= url %>"/></a>
+
+<% end %>
+
+<p>  </p>
+<p>  </p>
+<p>  </p>

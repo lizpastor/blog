@@ -4,12 +4,12 @@ body {background-color: rgb(236,235,234);}
 
 img {border: 2px solid black;}
 img {width: 400px;}
-img {margin-left: 50px}
+img {margin-left: 50px;}
 
-h1 {font-family: "Verdana"}
-h1 {margin-left: 50px}
+h1 {font-family: "Verdana";}
+h1 {margin-left: 50px;}
 
-p {font-family: "Verdana"}
+p {font-family: "Verdana";}
 p {font-size: 14px;}
 
 p {
@@ -22,5 +22,8 @@ p {
 
 <h1>Sitemap</h1>
 
-<p><a herf = "link?"> Index </a></p>
-<p><a herf = <"/about/index"> About Me </a></p>  #relative link 
+
+
+<p><%= link_to('Welcome', '/welcome')%></p>
+<p><%= link_to('About Me', '/about')%></p>
+<p><%= link_to('Pics', '/about/pics')%></p>
